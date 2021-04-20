@@ -10,7 +10,7 @@ pipeline {
         stage('Build&Deploy') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/jenkinsdemos/newmaven'
+                git 'https://github.com/neelamjoshi15/mavenproject.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn package"
